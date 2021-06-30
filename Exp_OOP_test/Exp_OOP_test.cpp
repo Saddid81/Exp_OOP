@@ -12,16 +12,17 @@ namespace Exp_OOP
 	{
 	public:
 		
-		TEST_METHOD(TestMethod1)
+		TEST_METHOD(When_PersonIsCreated_NameIsOk)
 		{
 
 			int age = 35;
 			string name = "Claudia";
-			int sex = Exp_OOP::Person::female;
+			int sex = Person::female;
 			
-			Exp_OOP::Person p_test(age,name,sex);
+			Person* p_test= new Person(age,name,0);
 			
-			Assert::AreEqual(name, p_test.name);
+			Assert::AreEqual(name, p_test->name);
+			
 		}
 	};
 }

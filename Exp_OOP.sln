@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Exp_OOP", "Exp_OOP.vcxproj", "{78397025-40A7-40FC-841F-B29365EC4F23}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Exp_OOP", "Exp_OOP\Exp_OOP.vcxproj", "{78397025-40A7-40FC-841F-B29365EC4F23}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Exp_OOP_test", "..\Exp_OOP_test\Exp_OOP_test.vcxproj", "{0320C098-6BD5-46DD-8552-B33F005ED98C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Exp_OOP_test", "Exp_OOP_test\Exp_OOP_test.vcxproj", "{0320C098-6BD5-46DD-8552-B33F005ED98C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

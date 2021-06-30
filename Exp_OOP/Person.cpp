@@ -21,8 +21,11 @@ namespace Exp_OOP
 	Person::Person(const Person& p)
 		:age(p.age), name(p.name), sex(p.sex)
 	{
-		auto* a = p.address;
-		address = new Address(a->house_number, a->street_name, a->city);
+		if (p.address != nullptr)
+		{
+			auto* address = new Address(p.address->house_number, p.address->street_name, p.address->city);
+		}
+			
 	}
 	
 	Person::~Person()

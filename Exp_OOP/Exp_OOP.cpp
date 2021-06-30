@@ -19,6 +19,7 @@ int main()
 	p1->PersonInf();
 
 	Employee E(38, "Maria", Person::female, "Science");
+	
 	auto n = [](const Person& p)
 	{
 		cout << p.name << endl;
@@ -28,8 +29,7 @@ int main()
 
 	int id = 45;
 	Empfactory ep;
-	ep.makeEmp(id);
-
+	
 	int TID = E.GetTaxId();
 
 	cout << TID << endl;
