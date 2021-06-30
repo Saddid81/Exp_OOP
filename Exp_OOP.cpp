@@ -4,6 +4,7 @@
 #include "Employee.h"
 #include "Empfactory.h"
 
+using namespace Exp_OOP;
 
 int main()
 {
@@ -22,7 +23,16 @@ int main()
 	{
 		cout << p.name << endl;
 	};
+	
 	n(E);
+
+	int id = 45;
+	Empfactory ep;
+	ep.makeEmp(id);
+
+	int TID = E.GetTaxId();
+
+	cout << TID << endl;
 
 	
 	delete p;

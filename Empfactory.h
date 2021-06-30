@@ -1,14 +1,17 @@
 #pragma once
 
-class Empfactory
+namespace Exp_OOP
 {
-public:
-	Employee makeEmp(int id)
+	class Empfactory
 	{
-		Employee mep;
-		mep.TaxId = id;
-		return mep;
-	}
+	public:
+		Employee makeEmp(int id)
+		{
+			Employee mep;
+			mep.TaxId = id;
+			return mep;
+		}
 
 
-};
+	};
+}

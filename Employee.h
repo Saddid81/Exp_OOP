@@ -1,22 +1,27 @@
 #pragma once
 #include "Person.h"
 
-class Employee : 
-	public Person
+namespace Exp_OOP
 {
-	friend class Empfactory;
+	class Employee :
+		public Person
+	{
+		friend class Empfactory;
 
-	int TaxId;
-public:
-	Employee()
-		:Person(0,"",0){} 
+		static int TaxId;
+	public:
+		Employee()
+			:Person(0, "", 0) {}
 
-	Employee(int age, string const& name, int sex, string department = string())
-		: Person(age, name, sex), department(department)
-	{}
+		Employee(int age, string const& name, int sex, string department = string())
+			: Person(age, name, sex), department(department)
+		{}
 
-	void PersonInf() override;
-	string department;
+		void PersonInf() override;
+		string department;
 
-};
+		static int GetTaxId();
 
+	};
+
+}
