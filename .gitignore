@@ -361,3 +361,10 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Ignore Exp_OOP/Test_proj.cpp and Exp_OOP_test/Debug/
+
+Exp_OOP/Test_proj.cpp
+Exp_OOP_test/Debug/**
+Exp_OOP_test/.vs/**
+Exp_OOP_test/Exp_OOP_test.sln
